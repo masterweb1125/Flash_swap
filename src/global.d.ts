@@ -8,7 +8,6 @@ declare global {
       isBlocto?: true
       isMathWallet?: true
       isTrustWallet?: true
-      isBlocto?: true
     }
     BinanceChain?: {
       bnbSign?: (address: string, message: string) => Promise<{ publicKey: string; signature: string }>
