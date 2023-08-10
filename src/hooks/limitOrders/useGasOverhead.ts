@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { formatUnits } from '@ethersproject/units'
 import { CurrencyAmount, Price, Currency } from '@pancakeswap/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
