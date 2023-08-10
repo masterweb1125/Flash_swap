@@ -7,7 +7,7 @@ import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { PairState } from 'hooks/usePairs'
 
 import useTotalSupply from 'hooks/useTotalSupply'
-import { useContext, useMemo } from 'react'
+import { useContext, useMemo, useState } from 'react'
 
 import tryParseAmount from '@pancakeswap/utils/tryParseAmount'
 import { Field } from 'state/mint/actions'
