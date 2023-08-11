@@ -54,7 +54,7 @@ export function useAllTokens(): { [address: string]: Token } {
  * Returns all tokens that are from officials token list and user added tokens
  */
 export function useOfficialsAndUserAddedTokens(): { [address: string]: Token } {
-  const { chainId } = useActiveWeb3React()
+  const { chainId, info } = useActiveWeb3React()
   const tokenMap = useAtomValue(combinedTokenMapFromOfficialsUrlsAtom)
   const userAddedTokens = useSelector(userAddedTokenSelector(chainId))
   return useMemo(() => {
